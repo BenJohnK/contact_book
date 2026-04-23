@@ -40,29 +40,29 @@ It allows users to create, search, delete, and merge contacts.
 # Production Architecture (If deployed as a web app)
 
 ## Backend
-FastAPI (Python) for REST APIs
-Service layer to handle business logic
+1. FastAPI (Python) for REST APIs
+2. Service layer to handle business logic
 
 ## Frontend
-React / Next.js for UI
+1. React / Next.js for UI
 
 ## Database
-PostgreSQL for persistent storage
-Proper indexing on name, email, phone for fast search
+1. PostgreSQL for persistent storage
+2. Proper indexing on name, email, phone for fast search
 
 ## Caching
-Redis for caching frequent search queries
-Search Optimization
+1. Redis for caching frequent search queries
+2. Search Optimization
 
 ## Background Jobs
-Celery + Redis for async tasks (e.g., deduplication, bulk imports)
+1. Celery + Redis for async tasks (e.g., deduplication, bulk imports)
 
 ## Deployment
-Backend: Docker + AWS EC2 / ECS
-Database: AWS RDS
-Frontend: Vercel / S3 + CloudFront
+1. Backend: Docker + AWS EC2 / ECS
+2. Database: AWS RDS
+3. Frontend: Vercel / S3 + CloudFront
 
 ## Security
-JWT-based authentication
-Input validation and sanitization
-Rate limiting
+1. JWT-based authentication
+2. Input validation and sanitization
+3. Rate limiting
